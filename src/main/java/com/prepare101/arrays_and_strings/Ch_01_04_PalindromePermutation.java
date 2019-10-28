@@ -15,6 +15,10 @@ import java.util.Map.Entry;
  * etc.)
  */
 
+
+///refer https://medium.com/algorithms-practice/given-a-string-check-if-it-is-a-permutation-of-a-palindrome-e0469f47761d
+
+>>>>>>> Arrays and Strings
 public class Ch_01_04_PalindromePermutation {
 	boolean check(String s) {
 		s = s.toLowerCase();
@@ -57,3 +61,38 @@ public class Ch_01_04_PalindromePermutation {
 		return map;
 	}
 }
+
+
+/// Better Way
+
+/**
+ * @param str
+ * @return
+ */
+//static boolean canFormPalindrome(String str) { 
+	  
+    // Create a list 
+/*
+	List<Character> list = new ArrayList<Character>(); 
+
+    // For each character in input strings, 
+    // remove character if list contains 
+    // else add character to list 
+    for (int i = 0; i < str.length(); i++) { 
+        if (list.contains(str.charAt(i))) 
+            list.remove((Character) str.charAt(i)); 
+        else
+            list.add(str.charAt(i)); 
+    } 
+
+    // if character length is even list is expected to be empty 
+    // or if character length is odd list size is expected to be 1 
+    if (str.length() % 2 == 0 && list.isEmpty() // if string length is even 
+            || (str.length() % 2 == 1 && list.size() == 1)) // if string length is odd 
+        return true; 
+    else
+        return false; 
+
+}
+
+*/
