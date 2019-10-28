@@ -12,8 +12,11 @@ public class Ch_01_01_IsUnique {
 			return true;
 
 		s = s.toLowerCase();
+		
+		if(s.length() >128)
+			return false;
 
-		int frequency_dict[] = new int[125];
+		int frequency_dict[] = new int[128];
 
 		for (int i = 0; i < s.length(); i++) {
 			if (frequency_dict[(int) s.charAt(i)] != 0) {
